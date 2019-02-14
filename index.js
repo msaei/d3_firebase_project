@@ -13,4 +13,10 @@ form.addEventListener('submit', e => {
         parent: parent.value,
         department: department.value
     })
+
+    //close the modal
+    var instance = M.Modal.getInstance(modal)
+    instance.close();
+    //clear all form fields
+    form.rest();
 })
